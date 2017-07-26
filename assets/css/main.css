@@ -1,5 +1,7 @@
 @import url(font-awesome.min.css);
+
 /* @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300i,400i"); */
+
 @import url('https://fonts.googleapis.com/css?family=Bitter:700|Roboto:300,400');
 
 /*
@@ -1878,11 +1880,9 @@ button:disabled,
     transform: scale(1.025);
 }
 
-
 .gallery .image:hover:after {
     opacity: 0;
 }
-
 
 .gallery .image .infobar {
     position: absolute;
@@ -1892,8 +1892,6 @@ button:disabled,
     padding: 1rem 1rem 0.3rem 0.5rem;
     color: rgba(255, 255, 255, 1);
 }
-
-
 
 .gallery .group {
     display: -moz-flex;
@@ -3758,17 +3756,53 @@ body.is-loading #wrapper {
     }
 }
 
+
 /*
 @pauldyke amends
 */
 
-.world {background: url(http://anglian_water.msgfocus.com/anglian_water/images/bluebg5.png); background-size:100%; overflow: hidden;}
-.rotate {-webkit-animation: cssAnimation 70s  20 linear;-moz-animation: cssAnimation 70s  20 linear;-o-animation: cssAnimation 70s  20 linear;} @-webkit-keyframes cssAnimation {from { -webkit-transform:  rotate(0deg) scale(1) skew(1deg) translate(0px); }  to { -webkit-transform:  rotate(360deg) scale(1) skew(1deg) translate(0px); } } @-moz-keyframes cssAnimation {from { -moz-transform:  rotate(0deg) scale(1) skew(1deg) translate(0px); }  to { -moz-transform:  rotate(360deg) scale(1) skew(1deg) translate(0px); } } @-o-keyframes cssAnimation {from { -o-transform:  rotate(0deg) scale(1) skew(1deg) translate(0px); }  to { -o-transform:  rotate(360deg) scale(1-----) skew(1deg) translate(0px); }  }
-
-.sky {
-        background-color: #b8d3e5;
+.world {
+    background: url(http://anglian_water.msgfocus.com/anglian_water/images/bluebg5.png);
+    background-size: 100%;
+    overflow: hidden;
 }
 
+.rotate {
+    -webkit-animation: cssAnimation 70s 20 linear;
+    -moz-animation: cssAnimation 70s 20 linear;
+    -ms-animation: cssAnimation 70s 20 linear;
+}
+
+@-webkit-keyframes cssAnimation {
+    from {
+        -webkit-transform: rotate(0deg) scale(1) skew(1deg) translate(0px);
+    }
+    to {
+        -webkit-transform: rotate(360deg) scale(1) skew(1deg) translate(0px);
+    }
+}
+
+@-moz-keyframes cssAnimation {
+    from {
+        -moz-transform: rotate(0deg) scale(1) skew(1deg) translate(0px);
+    }
+    to {
+        -moz-transform: rotate(360deg) scale(1) skew(1deg) translate(0px);
+    }
+}
+
+@-ms-keyframes cssAnimation {
+    from {
+        transform: rotate(0deg) scale(1) skew(1deg) translate(0px);
+    }
+    to {
+        transform: rotate(360deg) scale(1) skew(1deg) translate(0px);
+    }
+}
+
+.sky {
+    background-color: #b8d3e5;
+}
 
 #front-clouds {
     z-index: 2;
@@ -3828,7 +3862,6 @@ body.is-loading #wrapper {
     -ms-animation: movebackclouds 50s linear infinite;
     -webkit-transform: translate3d(0, 0, 0);
     background-size: 700px;
-        
 }
 
 @-webkit-keyframes movebackclouds {
@@ -3858,5 +3891,6 @@ body.is-loading #wrapper {
     }
 }
 
-.display-none {display: none;}
-
+.display-none {
+    display: none;
+}
