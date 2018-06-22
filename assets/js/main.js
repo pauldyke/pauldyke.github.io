@@ -753,6 +753,7 @@
 
 							});
 
+        
 
             // video mute.
             
@@ -765,7 +766,18 @@
       $("video").prop('muted', true);
     }
   });
+ 
+    // some personalisation fun
             
+        var urlParams = new URLSearchParams(window.location.search);
+ 
+        if (urlParams.has('i')) {
+           $('.hello').text('Hey ').append(urlParams.get('i')).append('!');
+           var clean_uri = location.protocol + "//" + location.host + location.pathname;
+           window.history.replaceState({}, document.title, clean_uri);    
+        }            
+            
+
             // contact form ajax.
             
             
