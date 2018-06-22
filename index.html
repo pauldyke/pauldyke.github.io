@@ -1,3 +1,202 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!DOCTYPE HTML>
 <!--
 	Ethereal by HTML5 UP
@@ -14,6 +213,21 @@
     <link rel="stylesheet" href="assets/css/main.css" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
     <meta name="robots" content="noindex, nofollow" />
+<script type="text/javascript" src="http://l2.io/ip.js?var=userip"></script>    
+<script language="Javascript">
+var ip = userip;
+var bannedips=[
+ "51.7.173.124", 
+]
+var handleips=bannedips.join("|")
+handleips=new RegExp(handleips, "i")
+
+if (ip.search(handleips)!=-1){ 
+document.getElementsByTagName("body").style.display = "none";
+}
+    
+</script>
+    
 </head>
 
 <body>
@@ -28,13 +242,14 @@
             <!-- Panel (Banner) -->
             <section class="panel banner right" id="start">
                 <div class="content color0 span-3-75">
-                    <h1 class="major">Hello, my name <br />is Paul</h1>
+                    <h1 class="major hello">Hello, my name<br />is Paul</h1>
                     <p>This is a short taster of some of my design and graphics work for Adestra and a few personal projects.</p>
                     <ul class="actions">
                         <li><a href="#first" class="button special color1 circle icon fa-angle-right">Next</a></li>
                     </ul>
                 </div>
                 <div class="image filtered span-1-75" data-position="25% 25%"><img src="images/portrait.png" alt="" /></div>
+                
             </section>
             
             
@@ -43,8 +258,8 @@
             <!-- Panel -->
             <section class="panel color4-alt" id="first">
                 <div class="intro color4 span-3">
-                    <h2 class="major">Design Lead</h2>
-                    <p>I work for Adestra, a marketing automation and email marketing software provider in Oxford. Here are a few email template designs that I have produced. I work directly with clients to help them to identify opportunities to communicate more clearly with their readers and find ways that template design can improve the efficiency and creativity of email campaign creation. I present webinars on Design Theory and The Value of Design in Email. I line manage and mentor junior team members.</p>
+                    <h2 class="major">Digital Design Manager</h2>
+                    <p>I manage six email designers and developers in the Digital Design Team at <a href="http://adestra.com">Adestra</a>. We help clients create better looking and better performing email campaigns, in less time through bespoke email templates. Most of my time is spent on pre-sales, scoping, writing briefs, scheduling and establishing quality procedures but here are a few email template designs that I have designed...</p>
                 </div>
                 <div class="gallery">
                     <div class="group span-3">
@@ -134,7 +349,7 @@
             <section class="panel color4-alt">
                 <div class="intro color4 span-3">
                     <h2 class="major">Web Development</h2>
-                    <p>In my spare time I have built websites using WordPress and Hugo. This site uses a customised open source html template by <a href="https://html5up.net">HTML5 UP</a>.</p>
+                    <p>In my spare time I have built websites using WordPress and Hugo. I have recently been developing a garden center affiliate website called <a href="http://plantbooth.com">Plantbooth</a>. This site uses a customised open source html template by <a href="https://html5up.net">HTML5 UP</a>.</p>
                 </div>
                 <div class="gallery">
                     <div class="group span-3">
@@ -144,7 +359,7 @@
                         </div>
                         <div class="image filtered  span-3" data-position="bottom">
                             <div class="infobar"><span class="icon fa-wordpress"></span>
-                                <br><a href="http://hbc-oxford.org.uk" target="_blank">Headington Baptist Church</a> - WordPress</div><img src="images/gallery/thumbs/hbc.png" />
+                                <br>Headington Baptist Church - WordPress</div><img src="images/gallery/thumbs/hbc.png" />
                         </div>
                     </div>
                 </div>
@@ -174,7 +389,7 @@
             <section class="panel color1">
                 <div class="intro joined">
                     <h2 class="major">Skills and Tools</h2>
-                    <p>Photoshop and a code editor are my main tools day to day. I make use of Illustrator and InDesign when creating vector and print ready designs. </p>
+                    <p>Photoshop and a code editor are my choice tools. I make use of Illustrator and InDesign when creating vector and print ready designs and Premiere for editing video.</p>
                 </div>
                 <div class="inner">
                     <ul class="grid-icons three connected">
@@ -192,9 +407,9 @@
                         </li>
                     </ul>
                 </div>
-                <!--                 <div class="image filtered tinted" data-position="top right">
+                            <div class="image filtered tinted" data-position="top right">
                     <img src="images/photoshop.png" alt="" />
-                </div> -->
+                </div> 
             </section>
 
 
@@ -242,7 +457,7 @@
     <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/skel.min.js"></script>
-    <script src="assets/js/main.js?2128"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
